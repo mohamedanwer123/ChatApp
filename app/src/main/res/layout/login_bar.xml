@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/loginbar_linearlayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#fff"
+        android:text="Login"
+        android:textSize="35dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/loginbar_title"/>
+
+</LinearLayout>

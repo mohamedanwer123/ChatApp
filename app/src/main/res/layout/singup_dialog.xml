@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/singupdialog_layout"
+    android:orientation="vertical"
+    android:background="#ab0384">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/signup"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#070f1d"
+        android:layout_marginBottom="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SingUp"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <EditText
+
+
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="username"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/des"
+        android:id="@+id/singupdialog_edittext_username"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="password"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/des"
+        android:id="@+id/singupdialog_edittext_password"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Signin"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/correct"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/singupdialog_button_Signup"/>
+</LinearLayout>

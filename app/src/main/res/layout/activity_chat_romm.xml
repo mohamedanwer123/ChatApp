@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chatroom_layout"
+    android:background="#180949"
+    tools:context="com.example.cm.chatapp.Activites.ChatRomm">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ListView
+         android:layout_width="match_parent"
+         android:layout_height="390dp"
+         android:id="@+id/chatroom_listview"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            android:id="@+id/chatroom_camera"
+            android:src="@drawable/camera"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            android:id="@+id/chatroom_gallary"
+            android:src="@drawable/gallery"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            android:id="@+id/chatroom_video"
+            android:src="@drawable/video"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/chat_room_layout">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:hint="Message"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="italic"
+            android:id="@+id/chatroom_message"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            app:backgroundTint="#580952"
+            android:src="@drawable/send"
+            android:id="@+id/chatroom_send"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

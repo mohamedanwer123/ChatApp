@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#180949">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/des"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:civ_border_width="3dp"
+                android:layout_marginTop="15dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/profile"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mohamed anwer"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:textStyle="italic"
+                android:textColor="#696868"
+                android:id="@+id/images_xml_textview_name"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textStyle="italic"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="ddddddddddddddddddddddddddd"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/images_xml_textview_describtion"
+           />
+
+        <ImageView
+            android:id="@+id/images_xml_imagevies_img"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/ll"
+            android:text="aaaaaaaaaaaaaa"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#180949"
+                android:layout_marginRight="30dp"
+                android:id="@+id/images_xml_button_share"/>
+
+            <com.amrdeveloper.reactbutton.ReactButton
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#180949"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

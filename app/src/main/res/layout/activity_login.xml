@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cm.chatapp.Activites.Login"
+    android:background="#180949"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="40dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/loginactivity_img"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff"
+        android:src="@drawable/profile"
+        />
+
+      <ImageView
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginTop="0dp"
+          android:id="@+id/loginactivity_camera"
+          android:background="@drawable/cameraa"/>
+
+    </LinearLayout>
+    <EditText
+
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="Enter the username"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/des"
+        android:id="@+id/loginactivity_edittext_username"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="Enter the password"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/des"
+        android:id="@+id/loginactivity_edittext_password"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:id="@+id/loginactivity_button_login"
+        android:drawableLeft="@drawable/login"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="Signin"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="#631570"
+        android:drawableLeft="@drawable/signin"
+        android:paddingLeft="10dp"
+        android:id="@+id/loginactivity_button_Signin"/>
+
+</LinearLayout>

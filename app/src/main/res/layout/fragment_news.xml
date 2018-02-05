@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#180949"
+    tools:context="com.example.cm.chatapp.Fragments.news">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/posts"
+            android:visibility="gone"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/newsFragment_edittext"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/des"
+        android:textColor="#fff"
+        android:hint="Write A Post" />
+
+       <android.support.design.widget.FloatingActionButton
+           android:id="@+id/newsFragment_button"
+           android:layout_width="50dp"
+           android:layout_height="100dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="10dp"
+           app:backgroundTint="#1f0b5e"
+           android:src="@drawable/post"
+           app:rippleColor="#32135b"/>
+   </LinearLayout>
+
+        <ListView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:id="@+id/newsFragment_listview"></ListView>
+
+
+    </LinearLayout>
+</ScrollView>
